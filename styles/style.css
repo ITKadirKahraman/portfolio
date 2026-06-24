@@ -1,0 +1,23 @@
+#aboutMe {
+    max-height: 780px;
+    width: 650px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--black);
+}
+
+#aboutMe:hover {
+    border-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+    transform: scale(0.95);
+}
+
+.photo {
+    height: 148px;
+    width: 148px;
+    border: 2px solid var(--scrollbar-color);
+    border-radius: 25px;
+}
