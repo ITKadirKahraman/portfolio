@@ -1,0 +1,20 @@
+:root {
+
+    /*
+    ***** color
+    */
+
+    --background-color: rgb(0,6,1);
+    --scrollbar-color: rgb(203,196,178);
+    --text-color: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --violet: rgb(255, 230, 255);
+
+    /*
+    ***** size
+    */
+    --size-0: 0;
+    --size-100P: 100%;
+    --size-100vh: 100vh;
+    --size-188px: 188px;
+}
