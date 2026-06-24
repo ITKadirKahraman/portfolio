@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <g fill="none"
+     stroke="#000"
+     stroke-width="40"
+     stroke-linecap="square"
+     stroke-linejoin="miter">
+
+    <!-- Linkes K -->
+    <path d="M110 80 V432"/>
+    <path d="M110 256 L240 120"/>
+    <path d="M110 256 L240 392"/>
+
+    <!-- Rechtes K -->
+    <path d="M320 80 V432"/>
+    <path d="M320 256 L450 120"/>
+    <path d="M320 256 L450 392"/>
+
+  </g>
+</svg>
