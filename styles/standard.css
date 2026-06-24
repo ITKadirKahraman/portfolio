@@ -1,0 +1,12 @@
+html, body {
+    margin: var(--size-0);
+    padding: var(--size-0);
+    width: var(--size-100P);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main {
+    max-height: var(--size-100vh);
+    overflow-y: hidden;
+}
