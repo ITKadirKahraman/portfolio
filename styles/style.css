@@ -1,8 +1,12 @@
-/* left section */
+/* 
+
+    left section 
+    
+*/
 
 #aboutMe {
-    max-height: 780px;
-    width: 650px;
+    max-height: 80%;
+    width: 45%;
     border: 1px solid rgb(96,95,93);
     border-radius: 15px;
     margin: 10px;
@@ -167,4 +171,18 @@ a {
 
 .linksSection a:hover .linkedIn {
     content: url(../assets/icons/linkedinHover.svg);
+}
+
+/* 
+
+    right section 
+    
+*/
+
+#explore {
+    max-height: 80%;
+    width: 45%;
+    border: 1px solid rgb(96,95,93);
+    border-radius: 15px;
+    margin: 10px;
 }
