@@ -1,7 +1,9 @@
+/* left section */
+
 #aboutMe {
     max-height: 780px;
     width: 650px;
-    border: 1px solid white;
+    border: 1px solid rgb(96,95,93);
     border-radius: 15px;
     margin: 10px;
     overflow-y: auto;
@@ -15,9 +17,154 @@
     transform: scale(0.95);
 }
 
+/* section headline */
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1::before {
+    content: "Kadir Kahraman";
+}
+
+h1:hover::before {
+    content: attr(data-hover);
+    color: var(--text);
+}
+
+/* section photo text */
+
+.photoTextSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .photo {
-    height: 148px;
+    height: 200px;
     width: 148px;
     border: 2px solid var(--scrollbar-color);
     border-radius: 25px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h2::before {
+    content: "Über mich";
+}
+
+h2:hover::before {
+    content: attr(data-hover);
+    color: var(--text);
+}
+
+.text {
+    margin: 10px 20px 20px 20px ;
+}
+
+/* section kurzfassung */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h3 span:hover {
+    color: yellow;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.pSatz {
+    margin: 10px;
+}
+
+/* section cards */
+
+.cardSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    height: 180px;
+    width: 300px;
+    border: 2px solid yellow;
+    border-radius: 25px;
+}
+
+
+/* section download cv file button */
+
+.cvButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.file {
+    height: 48px;
+    width: 48px;
+}
+
+.cvButton button:hover .file {
+    content: url(../assets/icons/fileDownHover.svg);
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* section links */
+
+.linksSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+    gap: 10px;
+}
+
+a {
+    height: 48px;
+    width: 48px;
+    border-radius: 25px;
+}
+
+.icon {
+   height: 48px;
+   width: 48px; 
+}
+
+.linksSection a:hover .gitHub {
+    content: url(../assets/icons/githubHover.svg);
+}
+
+.linksSection a:hover .linkedIn {
+    content: url(../assets/icons/linkedinHover.svg);
 }
