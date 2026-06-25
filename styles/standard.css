@@ -9,4 +9,7 @@ html, body {
 main {
     max-height: var(--size-100vh);
     overflow-y: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
