@@ -1,8 +1,11 @@
+// ABOUT ME SECTION
+
 function getAboutMeSection() {
     return `
         <h1 data-hover="KK"></h1>
         <section class="photoTextSection">
             <img class="photo" src="./assets/img/kadir.JPG" alt="Kadir Kahraman">
+            ${getTechStack()}
             <h2 data-hover="about M E"></h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet itaque repellendus deleniti maiores dolor ipsa nobis sed incidunt minima similique unde, dolores veniam vel, at tempora numquam ratione doloribus. Voluptatem eveniet alias odio vitae consectetur repellat provident quisquam quis neque rem saepe impedit a dicta consequuntur voluptas, veritatis eos dolorum explicabo qui, illo reprehenderit ea aut obcaecati. Modi molestiae quae pariatur porro laboriosam magni rem a maiores fugiat cumque officia, dicta atque facilis! Recusandae officia neque qui inventore consequuntur ratione exercitationem in assumenda. Quod impedit nobis tempora, facilis totam numquam rerum vel molestias eum, magni, nulla ab alias inventore assumenda repellendus explicabo maiores iusto voluptatem dolores? Aut veritatis eveniet doloribus, officiis obcaecati perspiciatis quae enim corrupti, soluta libero voluptate voluptatem! Ratione nesciunt repudiandae molestiae quis, architecto, consequatur ex tempora quisquam quasi nisi harum? Qui quis voluptates nihil. Laborum, dolores officiis rem sint nulla totam, beatae voluptatem animi illum harum culpa temporibus, distinctio quidem modi! Amet cupiditate ea incidunt rem perferendis obcaecati, voluptates laborum numquam quod rerum sunt nesciunt eaque nihil? Tempore voluptatum quo harum totam, libero, numquam aliquid dicta obcaecati magni quae ullam officia praesentium vitae mollitia culpa amet dignissimos enim. Aspernatur velit molestiae expedita incidunt nemo, tempore veritatis iste?</p>
         </section>
@@ -142,5 +145,44 @@ function getFunFact() {
             Debuggen ist 50 % meiner Arbeitszeit
         </p>
     </section>
+    `;
+}
+
+function getTechStack() {
+    return `
+        <section class="techSection">
+            <h3 class="h3Tech">Tech Stack</h3>
+            <div class="techStack">
+                <button class="btnTech"><img src="./assets/techStack/html.svg" alt="HTML"></button>
+                <button class="btnTech"><img src="./assets/techStack/css3.svg" alt="CSS3"></button>
+                <button class="btnTech"><img src="./assets/techStack/bootstrap.svg" alt="Bootstrap"></button>
+                <button class="btnTech"><img src="./assets/techStack/js.svg" alt="JavaScript"></button>
+                <button class="btnTech"><img src="./assets/techStack/nodejs.svg" alt="NodeJS"></button>
+                <br>
+                <button class="btnTech"><img src="./assets/techStack/git.svg" alt="GIT"></button>
+                <button class="btnTech"><img src="./assets/techStack/github.svg" alt="GitHub"></button>
+                <button class="btnTech"><img src="./assets/techStack/filezilla.svg" alt="FileZilla"></button>
+                <button class="btnTech"><img src="./assets/techStack/firebase.svg" alt="Firebase"></button>
+                <button class="btnTech"><img src="./assets/techStack/openai.svg" alt="ChatGPT"></button>
+                <button class="btnTech"><img src="./assets/techStack/figma.svg" alt="Figma"></button>
+                <button class="btnTech"><img src="./assets/techStack/visualstudiocode.svg" alt="Visual Studio Code"></button>
+            </div>
+        </section>
+    `;
+}
+
+// EXPLORE SECTION
+
+function getExploreSection() {
+    return `
+        <button id="openDialog">Dialog öffnen</button>
+
+        <!-- 2. Das Dialogfenster -->
+        <dialog id="meinDialog">
+            <p>Hallo! Dies ist ein modaler Dialog in Deutsch.</p>
+            <form method="dialog">
+                <button>Schließen</button>
+            </form>
+        </dialog>
     `;
 }
