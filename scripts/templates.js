@@ -1,4 +1,4 @@
-// ABOUT ME SECTION
+// ABOUT ME SECTION the left side
 
 function getAboutMeSection() {
     return `
@@ -31,6 +31,10 @@ function getCards() {
         ${getCardMe()}
         ${getFunFact()}
     </section>
+    <div class="arrow">
+        <button onclick="arrow()" class="prev" id="prev"><img src="./assets/icons/circleLeft.svg" alt="Prev Button"></button>
+        <button onclick="arrow()" class="next" id="next"><img src="./assets/icons/circleRight.svg" alt="Next Button"></button>
+    </div>
     `;
 }
 
@@ -171,7 +175,7 @@ function getTechStack() {
     `;
 }
 
-// EXPLORE SECTION
+// EXPLORE SECTION the right side
 
 function getExploreSection() {
     return `
