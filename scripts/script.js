@@ -9,15 +9,23 @@ function renderLeftSide() {
 
 function getCard() {
     document.getElementById('cards').innerHTML = getCards();
+    arrow();
 }
 
 function renderRightSide() {
     document.getElementById('explore').innerHTML = getExploreSection();
 }
 
-const button = document.getElementById('openDialog');
-    const dialog = document.getElementById('meinDialog');
+function arrow() {
+    let arrowPrev = document.getElementById('prev');
+    let arrowNext = document.getElementById('next');
+    let cards = document.querySelectorAll('.cardSection');
 
-    button.addEventListener('click', () => {
-        dialog.showModal(); // Öffnet das Fenster
+    arrowPrev.addEventListener('click', () => {
+        console.log('Vorherige Card');
     });
+
+    arrowNext.addEventListener('click', () => {
+        console.log('Nächste Card');
+    });
+}
