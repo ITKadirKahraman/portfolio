@@ -113,6 +113,19 @@ h3 span:hover {
     border-radius: 25px;
 }
 
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow .prev:hover img{
+    content: url(../assets/icons/circleLeftHover.svg);
+}
+
+.arrow .next:hover img{
+    content: url(../assets/icons/circleRightHover.svg);
+}
 
 /* section download cv file button */
 
