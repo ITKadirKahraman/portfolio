@@ -155,4 +155,4 @@ https://de.linkedin.com/in/kadirkahramaninfo
 
 Dieses Projekt dient als persönliches Portfolio und zu Präsentationszwecken.
 
-© 2025 Kadir Kahraman
+© 2026 Kadir Kahraman
