@@ -29,3 +29,36 @@ function arrow() {
         console.log('Nächste Card');
     });
 }
+
+function openSlideOverPanel() {
+    const buttons = document.querySelectorAll(".navigation button");
+
+    buttons.forEach( button => {
+        button.addEventListener("click", () => {
+            openPanel(button.dataset.panel);
+        })
+    });
+}
+
+function openPanel(panel) {
+    const slideOver = document.getElementById('slideOver');
+
+    switch(panel) {
+        case "projects":
+            slideOver.innerHTML = getProjects();
+            break;
+        case "skills":
+            slideOver.innerHTML = getSkliss();
+            break;
+        case "experience":
+            slideOver.innerHTML = getExperience();
+            break;
+        case "contact":
+            slideOver.innerHTML = getContact();
+            break;
+        default:
+            break;
+    }
+
+    slideOver.classList.add("open");
+}
