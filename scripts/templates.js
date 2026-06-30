@@ -179,14 +179,31 @@ function getTechStack() {
 
 function getExploreSection() {
     return `
-        <button id="openDialog">Dialog öffnen</button>
+        <section class="navigation">
+            <button class="rightButton briefcase" onclick="openSlideOverPanel()" data-panel="projects">Projects</button>
+            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="skills">Sklils</button>
+            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="experience">Experience</button>
+            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="contact">Contact</button>
+        </section>
 
-        <!-- 2. Das Dialogfenster -->
-        <dialog id="meinDialog">
-            <p>Hallo! Dies ist ein modaler Dialog in Deutsch.</p>
-            <form method="dialog">
-                <button>Schließen</button>
-            </form>
-        </dialog>
+        <aside id="slideOver" class="slide-over">
+            <!-- Inhalt wird hier eingefügt -->
+        </aside>
     `;
+}
+
+function getProjects() {
+    return ``;
+}
+
+function getSkliss() {
+    return ``;
+}
+
+function getExperience() {
+    return ``;
+}
+
+function getContact() {
+    return ``;
 }
