@@ -18,4 +18,10 @@
     --size-100P: 100%;
     --size-100vh: 100vh;
     --size-188px: 188px;
+
+    /*
+    ***** fonts
+    */
+
+    --font-family: Garamond, "Times New Roman", Times, serif;
 }
