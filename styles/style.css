@@ -13,6 +13,7 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-color) var(--black);
+    transition: 3s ease ;
 }
 
 #aboutMe:hover {
@@ -198,4 +199,57 @@ a {
     border: 1px solid rgb(96,95,93);
     border-radius: 15px;
     margin: 10px;
+    transition: 3s ease;
+}
+
+#explore:hover {
+    border-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.slide-over {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+
+    transition: right 300ms ease;
+}
+
+.slide-over.open {
+    right: 0;
+}
+
+.rightButton {
+    height: 168px;
+    width: 100%;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 3000ms ease;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rightButton:hover {
+    border-color: yellow;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+    font-size: 64px;
+    content: url(../assets/icons/briefcase.svg);
+}
+
+.navigation .rightButton:hover .briefcase {
+    content: url(../assets/icons/linkedinHover.svg);
 }
