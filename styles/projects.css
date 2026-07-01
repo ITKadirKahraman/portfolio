@@ -1,0 +1,11 @@
+.projectcard {
+    background-color: rgb(75,47,95);
+    color: rgb(255, 246, 229);
+    height: 100%;
+    margin: 0;
+}
+
+.projekte {
+    font-size: 48px;
+    font-weight: 700;
+}
