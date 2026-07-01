@@ -180,12 +180,26 @@ function getTechStack() {
 function getExploreSection() {
     return `
         <section class="navigation">
-            <button class="rightButton briefcase" onclick="openSlideOverPanel()" data-panel="projects">Projects</button>
-            <button class="rightButton tools" onclick="openSlideOverPanel()" data-panel="skills">Skills</button>
-            <button class="rightButton experience" onclick="openSlideOverPanel()" data-panel="experience">Experience</button>
-            <button class="rightButton contact" onclick="openSlideOverPanel()" data-panel="contact">Contact</button>
-        </section>
-
+            <button class="rightButton briefcase" onclick="openPanel('projects')" data-panel="projects">
+                <h3 class="rightH3">Projekte</h3>
+                <p class="rightSmallText">Entdecke meine Arbeiten und persönlichen Projekte.</p>
+            </button>
+            <button class="rightButton tools" onclick="openPanel('skills')" data-panel="skills">
+                <h3 class="rightH3">Fähigkeiten</h3>
+                <p class="rightSmallText">Technologien und Werkzeuge, mit denen ich entwickle.</p>
+            </button>
+            <button class="rightButton experience" onclick="openPanel('experience')" data-panel="experience">
+                <h3 class="rightH3">Werdegang</h3>
+                <p class="rightSmallText">Mein Weg, meine Erfahrungen und meine Entwicklung.</p>
+            </button>
+            <button class="rightButton contact" onclick="openPanel('contact')" data-panel="contact">
+                <h3 class="rightH3">Kontakt</h3>
+                <p class="rightSmallText">Nimm Kontakt mit mir auf. Ich freue mich auf den Austausch.</p>
+            </button>
+        </section>  
+        <div class="copyrightFooter">
+            <span class="copyright"><strong>© 2026 Kadir Kahraman</strong></span>
+        </div>
         <aside id="slideOver" class="slide-over">
             <!-- Inhalt wird hier eingefügt -->
         </aside>
@@ -193,17 +207,70 @@ function getExploreSection() {
 }
 
 function getProjects() {
-    return ``;
+    return `
+    <section class="projectcard" id="card">
+        <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
+            <img id="close" src="assets/icons/close.svg" alt="Close">
+        </button>
+        <span class="Projekte">Werdegang</span>
+    </section>
+    `;
 }
 
 function getSkills() {
-    return ``;
+    return `
+    <section class="skillscard" id="card">
+        <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
+            <img id="close" src="assets/icons/close.svg" alt="Close">
+        </button>
+        <span class="Fähigkeiten">Werdegang</span>
+    </section>
+    `;
 }
 
 function getExperience() {
-    return ``;
+    return `
+    <section class="experiencecard" id="card">
+        <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
+            <img id="close" src="assets/icons/close.svg" alt="Close">
+        </button>
+        <span class="werdegang">Werdegang</span>
+    </section>
+    `;
 }
 
 function getContact() {
-    return ``;
+    return `
+    <section class="businesscard" id="card">
+        <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
+            <img id="close" src="assets/icons/close.svg" alt="Close">
+        </button>
+        <img class="logo" src="./assets/icons/kk.svg" alt="KK">
+        <div class="visitenHeader">
+            <p class="slogan">Developer.</p>
+            <h3 class="h3Visit">Kadir Kahraman</h3>
+            <p class="visitText">Die Zukunft liegt in der IT.</p>
+        </div>
+        <div class="visitMiddle">
+            <table>
+                <tr>
+                    <td>📧</td>
+                    <td>kadirkahraman.it@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>📍</td>
+                    <td>Hammerstraße 282, 48153 Münster</td>
+                </tr>
+            </table>
+        </div>
+        <div class="linksSection">
+            <section class="cvButton">
+                <h4>Download CV</h4>
+                <button><a href="./assets/files/lebenslaufKadirKahraman.pdf" download><img class="file fileRight" src="./assets/icons/fileDown.svg" alt="CV Button"></a></button>
+            </section>
+            <a href="https://github.com/ITKadirKahraman" target="_blank"><img class="icon gitHubRight" src="./assets/icons/gitHub.svg" alt="GitHub"></a>
+            <a href="https://de.linkedin.com/in/kadirkahramaninfo" target="_blank"><img class="icon linkedInRight" src="./assets/icons/linkedin.svg" alt="Linkedin"></a>
+        </div>
+    </section>
+    `;
 }
