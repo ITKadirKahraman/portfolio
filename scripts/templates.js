@@ -212,7 +212,7 @@ function getProjects() {
         <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
             <img id="close" src="assets/icons/close.svg" alt="Close">
         </button>
-        <span class="Projekte">Werdegang</span>
+        <span class="projekte">Werdegang</span>
     </section>
     `;
 }
@@ -223,7 +223,7 @@ function getSkills() {
         <button class="closeBtnOrder" id="closeBtn" onclick="closeCard()">
             <img id="close" src="assets/icons/close.svg" alt="Close">
         </button>
-        <span class="Fähigkeiten">Werdegang</span>
+        <span class="faehigkeiten">Werdegang</span>
     </section>
     `;
 }
