@@ -14,6 +14,7 @@ function getCard() {
 
 function renderRightSide() {
     document.getElementById('explore').innerHTML = getExploreSection();
+    mouseEffect();
 }
 
 function arrow() {
@@ -27,16 +28,6 @@ function arrow() {
 
     arrowNext.addEventListener('click', () => {
         console.log('Nächste Card');
-    });
-}
-
-function openSlideOverPanel() {
-    const buttons = document.querySelectorAll(".navigation button");
-
-    buttons.forEach( button => {
-        button.addEventListener("click", () => {
-            openPanel(button.dataset.panel);
-        })
     });
 }
 
@@ -61,4 +52,22 @@ function openPanel(panel) {
     }
 
     slideOver.classList.add("open");
+}
+
+function mouseEffect() {
+    const buttons = document.querySelectorAll(".rightButton");
+
+    buttons.forEach(button => {
+        button.addEventListener("mousemove", e => {
+            const rect = button.getBoundingClientRect();
+            button.style.setProperty("--x", e.clientX - rect.left);
+            button.style.setProperty("--y", e.clientY - rect.top);
+        });
+    });
+}
+
+function closeCard() {
+    let cardClose = document.getElementById('card');
+    cardClose.style.display = 'none';
+    renderRightSide();
 }
