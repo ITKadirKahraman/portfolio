@@ -200,6 +200,8 @@ a {
     border-radius: 15px;
     margin: 10px;
     transition: 3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 #explore:hover {
@@ -217,13 +219,16 @@ a {
 }
 
 .slide-over {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 50%;
-    height: 100vh;
+    position: absolute;
+    top:0;
+    right:-100%;
 
-    transition: right 300ms ease;
+    width:100%;
+    height:100%;
+
+    background:#111;
+
+    transition:right .4s ease;
 }
 
 .slide-over.open {
@@ -238,37 +243,90 @@ a {
     border: 1px solid white;
     border-radius: 15px;
     cursor: pointer;
-    transition: 3000ms ease;
-    font-size: 32px;
-    font-weight: 700;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    --x: 50;
+    --y: 50;
+    position: relative;
+    overflow: hidden;
+}
+
+.rightButton::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+
+    background: radial-gradient(
+        400px circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+        rgba(255,255,255,.68),
+        transparent 35%
+    );
+
+    opacity: 0;
+    transition: opacity .25s ease;
 }
 
 .rightButton:hover {
     border-color: yellow;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
-    font-size: 48px;
+}
+
+.rightButton:hover::before {
+    opacity: 1;
+}
+
+.rightH3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.rightSmallText {
+    margin: 0;
+    text-align: left;
+    margin-left: 45px;
+    color: gray;
 }
 
 .briefcase:hover {
     background-image: url(../assets/icons/briefcase.svg);
-    background-size: 48px;
+    background-size: 38px;
+    background-position: 5px center;
     background-repeat: no-repeat;
 }
 
 .tools:hover {
     background-image: url(../assets/icons/tools.svg);
-    background-size: 48px;
+    background-size: 38px;
+    background-position: 5px center;
     background-repeat: no-repeat;
 }
 
 .experience:hover {
     background-image: url(../assets/icons/rocket.svg);
-    background-size: 48px;
+    background-size: 38px;
+    background-position: 5px center;
     background-repeat: no-repeat;
 }
 
 .contact:hover {
     background-image: url(../assets/icons/contact.svg);
-    background-size: 48px;
+    background-size: 38px;
+    background-position: 5px center;
     background-repeat: no-repeat;
+}
+
+.copyrightFooter {
+    height: 45px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
 }
