@@ -246,10 +246,29 @@ a {
 .rightButton:hover {
     border-color: yellow;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
-    font-size: 64px;
-    content: url(../assets/icons/briefcase.svg);
+    font-size: 48px;
 }
 
-.navigation .rightButton:hover .briefcase {
-    content: url(../assets/icons/linkedinHover.svg);
+.briefcase:hover {
+    background-image: url(../assets/icons/briefcase.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+}
+
+.tools:hover {
+    background-image: url(../assets/icons/tools.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+}
+
+.experience:hover {
+    background-image: url(../assets/icons/rocket.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+}
+
+.contact:hover {
+    background-image: url(../assets/icons/contact.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
 }
