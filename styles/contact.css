@@ -1,0 +1,52 @@
+.businesscard {
+    background-color: rgb(29,50,49);
+    color: rgb(142,126,77);
+    height: 100%;
+    margin: 0;
+}
+
+.closeBtnOrder {
+    margin-left: 380px;
+    margin-top: -250px;
+}
+
+.logo {
+    height: 250px;
+}
+
+.slogan {
+    margin: 0;
+}
+
+.h3Visit {
+    margin: 0;
+}
+
+.visitText {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+.linksSection a:hover .gitHubRight {
+    content: url(../assets/icons/gitHubRight.svg);
+}
+
+.linksSection a:hover .linkedInRight {
+    content: url(../assets/icons/linkedInRight.svg);
+}
+
+.cvButton button:hover .fileRight {
+    content: url(../assets/icons/fileDownloadRight.svg);
+}
+
+.businesscard .closeBtnOrder:hover #close {
+    content: url(../assets/icons/closeContact.svg);
+}
