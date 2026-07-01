@@ -181,9 +181,9 @@ function getExploreSection() {
     return `
         <section class="navigation">
             <button class="rightButton briefcase" onclick="openSlideOverPanel()" data-panel="projects">Projects</button>
-            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="skills">Sklils</button>
-            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="experience">Experience</button>
-            <button class="rightButton" onclick="openSlideOverPanel()" data-panel="contact">Contact</button>
+            <button class="rightButton tools" onclick="openSlideOverPanel()" data-panel="skills">Skills</button>
+            <button class="rightButton experience" onclick="openSlideOverPanel()" data-panel="experience">Experience</button>
+            <button class="rightButton contact" onclick="openSlideOverPanel()" data-panel="contact">Contact</button>
         </section>
 
         <aside id="slideOver" class="slide-over">
@@ -196,7 +196,7 @@ function getProjects() {
     return ``;
 }
 
-function getSkliss() {
+function getSkills() {
     return ``;
 }
 
