@@ -48,7 +48,7 @@ function openPanel(panel) {
             slideOver.innerHTML = getProjects();
             break;
         case "skills":
-            slideOver.innerHTML = getSkliss();
+            slideOver.innerHTML = getSkills();
             break;
         case "experience":
             slideOver.innerHTML = getExperience();
