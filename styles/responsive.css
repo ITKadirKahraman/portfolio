@@ -1,0 +1,18 @@
+@media (max-width: 950px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: none;
+    }
+
+    #aboutMe {
+        width: 85%;
+    }
+
+    #explore {
+        width: 85%;
+    }
+}
