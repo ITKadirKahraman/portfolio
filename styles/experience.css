@@ -1,0 +1,11 @@
+.experiencecard {
+    background-color: rgb(16, 43, 56);
+    color: rgb(255, 246, 229);
+    height: 100%;
+    margin: 0;
+}
+
+.werdegang {
+    font-size: 48px;
+    font-weight: 700;
+}
