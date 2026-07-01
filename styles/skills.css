@@ -1,0 +1,11 @@
+.skillscard {
+    background-color: rgb(109, 0, 26);
+    color: rgb(255, 246, 229);
+    height: 100%;
+    margin: 0;
+}
+
+.faehigkeiten {
+    font-size: 48px;
+    font-weight: 700;
+}
